@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculatrice Javascript</h1>
+    </header>
+    <main>
+        <div class="choix">
+            <span id="apparaitre" onclick="funcApparaitre()">Faire apparaître la calculatrice</span>
+            <span id="disparaitre" onclick="funcDisparaitre()">Faire disparaître la calculatrice</span>
+        </div>
+
+        <div class="form-parent" id="calculatrice">
+            <form method="get" action="#" id="monFormulaire">
+            
+                <input type="text" id="premier-chiffre" name="premier-chiffre">
+
+                <select id="operateur" name="operateur">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+                </select>
+
+                <input type="text" id="deuxieme-chiffre" name="deuxieme-chiffre">
+                <input type="submit" name="Calculer" value="Calculer">    
+                <input type="reset" value="Remise à 0">
+
+            </form>
+
+            <span id="spanNombre">Entrez un nombre</span>
+            <span id="spanOpe">Séléctionnez une opération à effectuer</span>
+       
+        </div>
+
+
+    </main>
+    
+
+    
+
+<script src="calc.js"></script>
+</body>
+</html>
